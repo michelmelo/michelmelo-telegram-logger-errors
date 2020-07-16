@@ -10,16 +10,14 @@
     "type": "library",
     "license": "MIT",
     "homepage": "https://github.com/michelmelo/telegram-logger-errors",
-    "authors": [
-        {
-            "name": "Evgen Kytonin",
-            "email": "killfess@gmail.com"
-        }
-    ],
+    "authors": [{
+        "name": "Evgen Kytonin",
+        "email": "killfess@gmail.com"
+    }],
     "require": {
         "php": "^7.0 || ^7.2",
         "jackmartin/telegram-bot-sdk": "3.0.*",
-        "illuminate/support": "~5.7.0|~5.8.0|^6.0|^7.0",
+        "illuminate/support": "~5.7.0|~5.8.0|^6.0|^7.0"
     },
     "autoload": {
         "psr-4": {
