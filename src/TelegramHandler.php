@@ -1,6 +1,6 @@
 <?php
 
-namespace Logger;
+namespace MichelMelo\Logger;
 
 use Exception;
 use Monolog\Handler\AbstractProcessingHandler;

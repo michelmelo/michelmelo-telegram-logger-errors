@@ -6,7 +6,7 @@
     {
         "psr-4":
         {
-            "Logger\\": "src"
+            "MichelMelo\\Logger\\": "src"
         }
     },
     "authors": [
@@ -30,7 +30,7 @@
         "laravel":
         {
             "providers": [
-                "Logger\\TelegramLoggerServiceProvider"
+                "MichelMelo\\Logger\\TelegramLoggerServiceProvider"
             ]
         }
     }

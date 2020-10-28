@@ -24,7 +24,7 @@ Add to <b>config/logging.php</b> file new channel:
 ```php
 'telegram' => [
     'driver' => 'custom',
-    'via'    => Logger\TelegramLogger::class,
+    'via'    => MichelMelo\Logger\TelegramLogger::class,
     'level'  => 'debug',
 ]
 ```
@@ -44,7 +44,7 @@ LOG_CHANNEL=telegram
 
 Publish config file
 ```
-php artisan vendor:publish --provider "Logger\TelegramLoggerServiceProvider"
+php artisan vendor:publish --provider "MichelMelo\Logger\TelegramLoggerServiceProvider"
 ```
 
 ## Create bot
