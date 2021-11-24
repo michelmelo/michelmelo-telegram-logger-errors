@@ -73,6 +73,18 @@ class TelegramHandler extends AbstractProcessingHandler
             file_get_contents(
                 'https://api.telegram.org/bot' . $this->botToken . '/sendMessage?'
                 . http_build_query([
+                    'text'       => $_SERVER['REQUEST_URI'] ?? 'CONSOLE',
+                    'chat_id'    => $this->chatId,
+                    'parse_mode' => 'html',
+                ])
+            );
+        } catch (Exception $exception) {
+
+        }
+        try {
+            file_get_contents(
+                'https://api.telegram.org/bot' . $this->botToken . '/sendMessage?'
+                . http_build_query([
                     'text'       => $this->formatText($record['formatted'], $record['level_name']),
                     'chat_id'    => $this->chatId,
                     'parse_mode' => 'html',
@@ -81,6 +93,7 @@ class TelegramHandler extends AbstractProcessingHandler
         } catch (Exception $exception) {
 
         }
+        //
     }
 
     /**
